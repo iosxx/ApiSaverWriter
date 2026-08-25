@@ -30,7 +30,7 @@ function trimTrailingSlash(value: string): string {
 
 const sleep = (milliseconds: number) => new Promise(resolve => setTimeout(resolve, milliseconds));
 const isQuotaExceeded = (value: string): boolean => /quota\s+(?:has\s+been\s+)?exceeded|insufficient[\s_-]*quota|billing[\s_-]*(?:limit|quota)|余额不足|额度(?:已)?用尽/i.test(value);
-const API_SAVER_BASE_URL = "https://api.apisaver.com/v1";
+const API_SAVER_BASE_URL = "https://cpa1.g0f.cn/v1";
 
 function supportsOpenAIJsonMode(model: string): boolean {
   // Gemini's OpenAI-compatible adapters commonly reject response_format at
